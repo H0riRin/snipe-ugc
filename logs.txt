@@ -1,0 +1,210 @@
+2023-05-03 07:14:39,635 - ERROR - An error occurred: Traceback (most recent call last):
+  File "D:\secret\ugc-sniper-main another one\main.py", line 44, in <module>
+    sio = socketio.AsyncClient()
+          ^^^^^^^^
+NameError: name 'socketio' is not defined
+
+2023-05-03 07:15:04,912 - INFO - Started Sniper Class
+2023-05-03 07:15:04,912 - INFO - Setting up accounts
+2023-05-03 07:15:04,913 - DEBUG - Using selector: SelectSelector
+2023-05-03 07:15:05,233 - DEBUG - Using selector: SelectSelector
+2023-05-03 07:15:05,234 - DEBUG - Scraped x_token
+2023-05-03 07:15:05,539 - DEBUG - Checking Version
+2023-05-03 07:15:05,543 - DEBUG - Starting new HTTPS connection (1): raw.githubusercontent.com:443
+2023-05-03 07:15:05,576 - DEBUG - https://raw.githubusercontent.com:443 "GET /efenatuyo/ugc-sniper/main/version HTTP/1.1" 200 27
+2023-05-03 07:15:05,587 - DEBUG - Using selector: SelectSelector
+2023-05-03 07:15:05,589 - DEBUG - Using selector: SelectSelector
+2023-05-03 07:15:05,590 - INFO - Started sniping
+2023-05-03 07:15:05,948 - INFO - Rate limit hit
+2023-05-03 07:15:08,777 - INFO - Rate limit hit
+2023-05-03 07:15:11,516 - INFO - Rate limit hit
+2023-05-03 07:15:14,252 - INFO - Rate limit hit
+2023-05-03 07:15:17,058 - INFO - Rate limit hit
+2023-05-03 07:15:19,857 - INFO - Rate limit hit
+2023-05-03 07:15:22,685 - INFO - Rate limit hit
+2023-05-03 07:15:25,532 - INFO - Rate limit hit
+2023-05-03 07:15:28,267 - INFO - Rate limit hit
+2023-05-03 07:25:14,421 - INFO - Started Sniper Class
+2023-05-03 07:25:14,446 - INFO - Setting up accounts
+2023-05-03 07:25:14,446 - DEBUG - Using selector: SelectSelector
+2023-05-03 07:25:14,762 - DEBUG - Using selector: SelectSelector
+2023-05-03 07:25:14,762 - DEBUG - Scraped x_token
+2023-05-03 07:25:15,062 - DEBUG - Checking Version
+2023-05-03 07:25:15,068 - DEBUG - Starting new HTTPS connection (1): raw.githubusercontent.com:443
+2023-05-03 07:25:15,392 - DEBUG - https://raw.githubusercontent.com:443 "GET /efenatuyo/ugc-sniper/main/version HTTP/1.1" 200 27
+2023-05-03 07:25:15,395 - DEBUG - Using selector: SelectSelector
+2023-05-03 07:25:15,397 - DEBUG - Using selector: SelectSelector
+2023-05-03 07:25:15,398 - INFO - Started sniping
+2023-05-03 07:25:16,504 - ERROR - An error occurred: Traceback (most recent call last):
+  File "D:\secret\ugc-sniper-main another one\main.py", line 672, in <module>
+    sniper = Sniper()
+             ^^^^^^^^
+  File "D:\secret\ugc-sniper-main another one\main.py", line 184, in __init__
+    asyncio.run(self.start())
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 653, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "D:\secret\ugc-sniper-main another one\main.py", line 658, in start
+    await asyncio.gather(*coroutines)
+  File "D:\secret\ugc-sniper-main another one\main.py", line 646, in given_id_sniper
+    await asyncio.gather(*self.tasks.values())
+  File "D:\secret\ugc-sniper-main another one\main.py", line 585, in search
+    raise Exception(f"Invalid item id given ID: {id}")
+Exception: Invalid item id given ID: 13280188324,13324370910
+
+2023-05-03 07:26:01,076 - INFO - Started Sniper Class
+2023-05-03 07:26:01,079 - ERROR - An error occurred: Traceback (most recent call last):
+  File "D:\secret\ugc-sniper-main another one\main.py", line 672, in <module>
+    sniper = Sniper()
+             ^^^^^^^^
+  File "D:\secret\ugc-sniper-main another one\main.py", line 122, in __init__
+    self.items = self.load_item_list
+                 ^^^^^^^^^^^^^^^^^^^
+  File "D:\secret\ugc-sniper-main another one\main.py", line 233, in load_item_list
+    def load_item_list(self): return self._load_items()
+                                     ^^^^^^^^^^^^^^^^^^
+  File "D:\secret\ugc-sniper-main another one\main.py", line 411, in _load_items
+    for item in self.config["items"]:
+                ^^^^^^^^^^^
+  File "D:\secret\ugc-sniper-main another one\main.py", line 237, in config
+    with open("config.json") as file: return json.load(file)
+                                             ^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.1008.0_x64__qbz5n2kfra8p0\Lib\json\__init__.py", line 293, in load
+    return loads(fp.read(),
+           ^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.1008.0_x64__qbz5n2kfra8p0\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.1008.0_x64__qbz5n2kfra8p0\Lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.1008.0_x64__qbz5n2kfra8p0\Lib\json\decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+               ^^^^^^^^^^^^^^^^^^^^^^
+json.decoder.JSONDecodeError: Invalid control character at: line 8 column 27 (char 245)
+
+2023-05-03 07:26:15,197 - INFO - Started Sniper Class
+2023-05-03 07:26:15,198 - INFO - Setting up accounts
+2023-05-03 07:26:15,199 - DEBUG - Using selector: SelectSelector
+2023-05-03 07:26:15,514 - DEBUG - Using selector: SelectSelector
+2023-05-03 07:26:15,515 - DEBUG - Scraped x_token
+2023-05-03 07:26:15,811 - DEBUG - Checking Version
+2023-05-03 07:26:15,814 - DEBUG - Starting new HTTPS connection (1): raw.githubusercontent.com:443
+2023-05-03 07:26:15,847 - DEBUG - https://raw.githubusercontent.com:443 "GET /efenatuyo/ugc-sniper/main/version HTTP/1.1" 200 27
+2023-05-03 07:26:15,849 - DEBUG - Using selector: SelectSelector
+2023-05-03 07:26:15,851 - DEBUG - Using selector: SelectSelector
+2023-05-03 07:26:15,851 - INFO - Started sniping
+2023-05-03 07:26:33,989 - INFO - Started Sniper Class
+2023-05-03 07:26:33,990 - INFO - Setting up accounts
+2023-05-03 07:26:33,990 - DEBUG - Using selector: SelectSelector
+2023-05-03 07:26:34,311 - DEBUG - Using selector: SelectSelector
+2023-05-03 07:26:34,311 - DEBUG - Scraped x_token
+2023-05-03 07:26:34,613 - DEBUG - Checking Version
+2023-05-03 07:26:34,616 - DEBUG - Starting new HTTPS connection (1): raw.githubusercontent.com:443
+2023-05-03 07:26:34,659 - DEBUG - https://raw.githubusercontent.com:443 "GET /efenatuyo/ugc-sniper/main/version HTTP/1.1" 200 27
+2023-05-03 07:26:34,660 - DEBUG - Using selector: SelectSelector
+2023-05-03 07:26:34,662 - DEBUG - Using selector: SelectSelector
+2023-05-03 07:26:34,662 - INFO - Started sniping
+2023-05-03 07:26:35,747 - ERROR - An error occurred: Traceback (most recent call last):
+  File "D:\secret\ugc-sniper-main another one\main.py", line 672, in <module>
+    sniper = Sniper()
+             ^^^^^^^^
+  File "D:\secret\ugc-sniper-main another one\main.py", line 184, in __init__
+    asyncio.run(self.start())
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 653, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "D:\secret\ugc-sniper-main another one\main.py", line 658, in start
+    await asyncio.gather(*coroutines)
+  File "D:\secret\ugc-sniper-main another one\main.py", line 646, in given_id_sniper
+    await asyncio.gather(*self.tasks.values())
+  File "D:\secret\ugc-sniper-main another one\main.py", line 585, in search
+    raise Exception(f"Invalid item id given ID: {id}")
+Exception: Invalid item id given ID: 13280188324 13324370910
+
+2023-05-03 07:27:15,059 - INFO - Started Sniper Class
+2023-05-03 07:27:15,060 - INFO - Setting up accounts
+2023-05-03 07:27:15,060 - DEBUG - Using selector: SelectSelector
+2023-05-03 07:27:15,825 - DEBUG - Using selector: SelectSelector
+2023-05-03 07:27:15,825 - DEBUG - Scraped x_token
+2023-05-03 07:27:16,132 - DEBUG - Checking Version
+2023-05-03 07:27:16,136 - DEBUG - Starting new HTTPS connection (1): raw.githubusercontent.com:443
+2023-05-03 07:27:16,173 - DEBUG - https://raw.githubusercontent.com:443 "GET /efenatuyo/ugc-sniper/main/version HTTP/1.1" 200 27
+2023-05-03 07:27:16,175 - DEBUG - Using selector: SelectSelector
+2023-05-03 07:27:16,176 - DEBUG - Using selector: SelectSelector
+2023-05-03 07:27:16,177 - INFO - Started sniping
+2023-05-03 07:37:16,423 - DEBUG - Scraped x_token
+2023-05-03 07:44:26,391 - ERROR - Unclosed connection
+client_connection: Connection<ConnectionKey(host='accountsettings.roblox.com', port=443, is_ssl=True, ssl=False, proxy=None, proxy_auth=None, proxy_headers_hash=None)>
+2023-05-03 07:47:16,920 - DEBUG - Scraped x_token
+2023-05-03 07:57:17,403 - DEBUG - Scraped x_token
+2023-05-03 08:07:17,867 - DEBUG - Scraped x_token
+2023-05-03 08:17:18,258 - DEBUG - Scraped x_token
+2023-05-03 08:27:18,899 - DEBUG - Scraped x_token
+2023-05-03 08:35:24,374 - ERROR - Unclosed connection
+client_connection: Connection<ConnectionKey(host='accountsettings.roblox.com', port=443, is_ssl=True, ssl=False, proxy=None, proxy_auth=None, proxy_headers_hash=None)>
+2023-05-03 08:35:24,374 - ERROR - Unclosed connection
+client_connection: Connection<ConnectionKey(host='accountsettings.roblox.com', port=443, is_ssl=True, ssl=False, proxy=None, proxy_auth=None, proxy_headers_hash=None)>
+2023-05-03 08:37:19,371 - DEBUG - Scraped x_token
+2023-05-03 08:47:19,863 - DEBUG - Scraped x_token
+2023-05-03 08:57:20,346 - DEBUG - Scraped x_token
+2023-05-03 09:04:28,922 - ERROR - Unclosed connection
+client_connection: Connection<ConnectionKey(host='accountsettings.roblox.com', port=443, is_ssl=True, ssl=False, proxy=None, proxy_auth=None, proxy_headers_hash=None)>
+2023-05-03 09:04:28,922 - ERROR - Unclosed connection
+client_connection: Connection<ConnectionKey(host='accountsettings.roblox.com', port=443, is_ssl=True, ssl=False, proxy=None, proxy_auth=None, proxy_headers_hash=None)>
+2023-05-03 09:04:28,922 - ERROR - Unclosed connection
+client_connection: Connection<ConnectionKey(host='accountsettings.roblox.com', port=443, is_ssl=True, ssl=False, proxy=None, proxy_auth=None, proxy_headers_hash=None)>
+2023-05-03 09:07:20,812 - DEBUG - Scraped x_token
+2023-05-03 09:17:21,723 - DEBUG - Scraped x_token
+2023-05-03 09:27:22,256 - DEBUG - Scraped x_token
+2023-05-03 09:33:39,051 - ERROR - Unclosed connection
+client_connection: Connection<ConnectionKey(host='accountsettings.roblox.com', port=443, is_ssl=True, ssl=False, proxy=None, proxy_auth=None, proxy_headers_hash=None)>
+2023-05-03 09:33:39,051 - ERROR - Unclosed connection
+client_connection: Connection<ConnectionKey(host='accountsettings.roblox.com', port=443, is_ssl=True, ssl=False, proxy=None, proxy_auth=None, proxy_headers_hash=None)>
+2023-05-03 09:33:39,052 - ERROR - Unclosed connection
+client_connection: Connection<ConnectionKey(host='accountsettings.roblox.com', port=443, is_ssl=True, ssl=False, proxy=None, proxy_auth=None, proxy_headers_hash=None)>
+2023-05-03 09:37:22,784 - DEBUG - Scraped x_token
+2023-05-03 09:47:23,262 - DEBUG - Scraped x_token
+2023-05-03 09:57:23,671 - DEBUG - Scraped x_token
+2023-05-03 10:04:29,272 - ERROR - Unclosed connection
+client_connection: Connection<ConnectionKey(host='accountsettings.roblox.com', port=443, is_ssl=True, ssl=False, proxy=None, proxy_auth=None, proxy_headers_hash=None)>
+2023-05-03 10:04:29,272 - ERROR - Unclosed connection
+client_connection: Connection<ConnectionKey(host='accountsettings.roblox.com', port=443, is_ssl=True, ssl=False, proxy=None, proxy_auth=None, proxy_headers_hash=None)>
+2023-05-03 10:07:24,315 - DEBUG - Scraped x_token
+2023-05-03 10:13:29,343 - ERROR - Unclosed connection
+client_connection: Connection<ConnectionKey(host='accountsettings.roblox.com', port=443, is_ssl=True, ssl=False, proxy=None, proxy_auth=None, proxy_headers_hash=None)>
+2023-05-03 10:17:25,725 - DEBUG - Scraped x_token
+2023-05-03 10:27:26,419 - DEBUG - Scraped x_token
+2023-05-03 10:37:26,868 - DEBUG - Scraped x_token
+2023-05-03 10:47:27,308 - DEBUG - Scraped x_token
+2023-05-03 10:57:27,878 - DEBUG - Scraped x_token
+2023-05-03 11:03:32,097 - ERROR - Unclosed connection
+client_connection: Connection<ConnectionKey(host='accountsettings.roblox.com', port=443, is_ssl=True, ssl=False, proxy=None, proxy_auth=None, proxy_headers_hash=None)>
+2023-05-03 11:07:28,482 - DEBUG - Scraped x_token
+2023-05-03 11:17:29,053 - DEBUG - Scraped x_token
+2023-05-03 11:27:29,673 - DEBUG - Scraped x_token
+2023-05-03 11:35:29,865 - ERROR - Unclosed connection
+client_connection: Connection<ConnectionKey(host='accountsettings.roblox.com', port=443, is_ssl=True, ssl=False, proxy=None, proxy_auth=None, proxy_headers_hash=None)>
+2023-05-03 11:37:31,241 - DEBUG - Scraped x_token
+2023-05-03 11:47:33,291 - DEBUG - Scraped x_token
+2023-05-03 11:57:34,342 - DEBUG - Scraped x_token
+2023-05-03 12:07:34,949 - DEBUG - Scraped x_token
+2023-05-03 12:17:36,313 - DEBUG - Scraped x_token
+2023-05-03 12:27:37,150 - DEBUG - Scraped x_token
+2023-05-03 14:21:32,910 - ERROR - An error occurred: Traceback (most recent call last):
+  File "D:\secret\ugc-sniper-main another one\main.py", line 44, in <module>
+    sio = socketio.AsyncClient()
+NameError: name 'socketio' is not defined
+
